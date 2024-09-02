@@ -28,5 +28,10 @@
 	        out.print(e);
 	    }
 	%>
+
+    <script>
+        alert('등록 성공');
+        location.href = "peopleShow.jsp"
+    </script>
 </body>
 </html>
