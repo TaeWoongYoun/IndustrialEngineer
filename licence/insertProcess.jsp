@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자격 관리 프로그램</title>
+</head>
+<body>
+	<%
+		String sno = request.getParameter("sno");
+		String sname = request.getParameter("sname");
+		String tel = request.getParameter("tel");
+		String bdate = request.getParameter("bdate");
+		String lino = request.getParameter("lino");
+		String status = request.getParameter("status");
+		String sql = "INSERT INTO student VALUES ('"+sno+"', '"+sname+"', '"+tel+"', '"+bdate+"', '"+lino+"', '"+status+"')";
+	    try {
+	        Class.forName ("oracle.jdbc.OracleDriver");
+	        Connection con = DriverManager.getConnection ("jdbc:oracle:thin:@//localhost:1521/xe","system","1234");
+	        Statement stmt = con.createStatement();
+	        ResultSet rs = stmt.executeQuery(sql);
+	        rs.next();
+	        stmt.close();
+	        con.close();
+	    } catch (Exception e) {
+	        out.println(e);
+	    }
+	%>
+    <script>
+        alert('등록이 완료 되었습니다!');
+        location.href = 'read.jsp'
+    </script>
+</body>
+</html>
