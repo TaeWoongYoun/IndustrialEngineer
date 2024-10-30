@@ -22,6 +22,11 @@
 - **Vote 관리**  
   - 지역구 의원 투표 프로그램으로 조회, 등록, 후보자 순위 기능을 구현했습니다.
 
+## 🖼️ 프로젝트 실행 화면 (학원 관리 프로그램 수정 페이지)
+<p align="center">
+  <img src="./readme.png" alt="image" width="600">
+</p>
+
 ## 🛠️ 사용된 기술 스택
 
 ![Java](https://img.shields.io/badge/Java-JSP-007396?style=flat-square&logo=java&logoColor=white) 
