@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>백신예방접종 프로그램</title>
+<title>주식 매수 관리 프로그램</title>
 </head>
 <body>
     <style>

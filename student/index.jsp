@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>과정평가형 정보처리산업기사(v4.0) 성적관리 프로그램 ver2022-05</title>
+<title>정보처리산업기사 성적관리 프로그램 ver2022-05</title>
 </head>
 <body>
 	<style>

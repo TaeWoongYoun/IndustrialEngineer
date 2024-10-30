@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>INSTITUTE</title>
+<title>학원 관리 프로그램</title>
 </head>
 <body>
     <style>
