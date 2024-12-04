@@ -39,6 +39,7 @@
 	            <th>강의명</th>
 	            <th>수강료</th>
 	            <th>강사자격취득일</th>
+	            <th>수정</th>
 	        </tr>
 	        	<%
 					try {
@@ -51,7 +52,8 @@
 							out.println("    <td>" + rs.getString(2) + "</td>");
 							out.println("    <td>" + rs.getString(3) + "</td>");
 							out.println("    <td>￦" + String.format("%,d", rs.getInt(4)) + "</td>");
-							out.println("    <td>" + rs.getString(5).substring(0,4) + "년" + rs.getString(5).substring(4,6) + "월" + rs.getString(5).substring(6,8) + "일" + "</td></tr>");
+							out.println("    <td>" + rs.getString(5).substring(0,4) + "년" + rs.getString(5).substring(4,6) + "월" + rs.getString(5).substring(6,8) + "일" + "</td>");
+							out.println("    <td><a href='update.jsp?id="+rs.getString(1)+"'><button>수정</button></a></td></tr>");
 						}
 						stmt.close();
 						con.close();
